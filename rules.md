@@ -19,7 +19,7 @@
 /**
  * @description xxx
  * @author xinrui.an
- * @date: yyyy/MM/dd
+ * @date yyyy/MM/dd
  */
 ```
 
