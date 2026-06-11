@@ -39,9 +39,9 @@
 /**
  * 用户服务
  *
+ * @description 用户相关业务处理
  * @author xinrui.an
  * @date 2026/06/11
- * @description 用户相关业务处理
  */
 public class UserService {
 }
