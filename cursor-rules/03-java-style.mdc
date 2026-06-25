@@ -6,7 +6,7 @@ alwaysApply: false
 
 # Java 编码规范
 
-遵循阿里巴巴开发规范与命名规范。
+遵循阿里巴巴开发规范与命名规范。注释细节见 04-java-comment。
 
 ## POJO
 
@@ -40,24 +40,16 @@ catch (Exception e) {
 - 关键字大写（SELECT、FROM、WHERE）
 - 禁止 `SELECT *`，必须明确字段
 
+```sql
+SELECT id, name, status FROM user WHERE status = 1
+```
+
 ## 格式
 
 - if/for/while 必须大括号
 - 运算符两边空格
 - Stream 链式调用换行对齐
 - 禁止魔法值
-
-## 新建 Java 类
-
-类注释格式：
-
-```java
-/**
- * @description xxx
- * @author xinrui.an
- * @date yyyy/MM/dd
- */
-```
 
 ## 原则
 

@@ -28,6 +28,6 @@ alwaysApply: true
 - SQL 风险（字段、索引、兼容性）
 - 接口兼容性
 
-## Git Commit
+## Git
 
-只有用户明确要求时才 commit，不要主动 commit。创建 commit 前参考 git-commit-message 规则。
+只有用户明确要求时才 commit。详见 git-commit-message 规则。

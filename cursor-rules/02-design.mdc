@@ -20,7 +20,7 @@ alwaysApply: true
 ## 禁止
 
 - 为展示能力而新增设计模式
-- 无理由新增 Factory / Builder / Adapter / Converter / Facade
+- 无理由新增 Factory / Builder / Adapter / Converter / Facade / Strategy / DomainEvent
   - 除非项目已有统一规范且本次改动必须沿用
 
 ## 反例

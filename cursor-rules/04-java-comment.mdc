@@ -14,10 +14,10 @@ alwaysApply: false
 - 枚举每个枚举值
 - 类属性
 
+新建类注释，标签顺序固定：
+
 ```java
 /**
- * 用户服务
- *
  * @description 用户相关业务处理
  * @author xinrui.an
  * @date 2026/06/11

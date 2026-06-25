@@ -7,9 +7,9 @@ alwaysApply: true
 
 ## 编码前必须
 
-1. 搜索项目，寻找类似实现
-2. 优先阅读：Controller、Service、Mapper、DTO、SQL
-3. 模仿现有风格与模式
+1. 搜索项目（Grep / SemanticSearch），寻找类似实现
+2. 优先阅读：Controller、Service、Mapper、DTO、SQL、XML
+3. 模仿现有风格与模式，不创造新风格
 
 ## 禁止
 

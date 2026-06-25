@@ -6,6 +6,10 @@
 
 先看代码 → 再分析 → 最小改动 → 保持风格 → 最后编码
 
+## 规则加载顺序
+
+06-read-first → 01-agent → 02-design → 03/04-java → 05-change-safety
+
 ## 规则模块
 
 | 文件 | 作用域 | 职责 |
@@ -20,17 +24,22 @@
 
 ## 部署到 Cursor
 
-全局生效（推荐）：
+一键同步（推荐）：
+
+```bash
+./sync.sh
+```
+
+指定目录（项目级）：
+
+```bash
+./sync.sh /path/to/project/.cursor/rules
+```
+
+手动同步：
 
 ```bash
 cp cursor-rules/*.mdc ~/.cursor/rules/
-```
-
-项目级生效：
-
-```bash
-mkdir -p /path/to/project/.cursor/rules
-cp cursor-rules/*.mdc /path/to/project/.cursor/rules/
 ```
 
 部署后新开 Agent 会话即可加载。
