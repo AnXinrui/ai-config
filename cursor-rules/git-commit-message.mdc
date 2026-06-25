@@ -1,0 +1,15 @@
+---
+description: Git commit message 必须参考本仓库历史风格
+alwaysApply: true
+---
+
+## Git Commit Message
+
+创建 commit 前必须：
+
+1. 并行执行 `git status`、`git diff`、`git log`（至少最近 10~20 条）
+2. **严格参考本仓库已有 commit message 的风格**（语气、中英文、前缀如 fix/feat、是否带 issue 号等）
+3. 新 message 要与历史一致，不要自创新的格式
+4. 写清「为什么改」，1~2 句即可
+
+只有用户明确要求时才 commit；不要主动 commit。

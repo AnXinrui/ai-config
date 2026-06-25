@@ -1,0 +1,32 @@
+---
+description: 架构设计规则：KISS/SOLID/YAGNI，禁止过度设计
+alwaysApply: true
+---
+
+# 架构设计规则
+
+## 遵循
+
+- KISS：保持简单
+- SOLID：单一职责、开闭等原则
+- YAGNI：不做当前不需要的设计
+- 第一性原理：从问题本质出发，不堆叠无关抽象
+
+## 优先
+
+- 现有实现、现有架构、现有依赖
+- 最小改动实现需求
+
+## 禁止
+
+- 为展示能力而新增设计模式
+- 无理由新增 Factory / Builder / Adapter / Converter / Facade
+  - 除非项目已有统一规范且本次改动必须沿用
+
+## 反例
+
+新增一个字段 → 顺手引入 Factory + Strategy + Builder + DomainEvent
+
+## 正例
+
+在现有 Service / Controller / Mapper 中按既有模式扩展，不引入新抽象层。

@@ -1,0 +1,55 @@
+---
+description: Java 注释规范（最高优先级）
+globs: **/*.java
+alwaysApply: false
+---
+
+# Java 注释规范
+
+## 必须 Javadoc（`/** */`）
+
+- 类、接口、枚举
+- public / protected 方法
+- 接口方法、抽象方法
+- 枚举每个枚举值
+- 类属性
+
+```java
+/**
+ * 用户服务
+ *
+ * @description 用户相关业务处理
+ * @author xinrui.an
+ * @date 2026/06/11
+ */
+public class UserService {
+}
+```
+
+## 方法内部
+
+- 使用 `//` 单行或多行业务注释
+- 注释写在代码**上方**
+- `//` 后必须且仅有一个空格
+
+```java
+// 第一步：收集所有非空 specCode
+List<String> specCodeList = dtoList.stream()
+        .map(DemoDTO::getSpecCode)
+        .filter(StringUtils::isNotBlank)
+        .distinct()
+        .collect(Collectors.toList());
+
+// 第二步：批量查询规格信息
+Map<String, SpecInfo> specInfoMap = specService.queryMap(specCodeList);
+```
+
+## 禁止
+
+- 方法内部使用 `/* */`
+- 行尾注释
+
+```java
+// 错误
+User user = userService.getById(userId); // 查询用户信息
+```
